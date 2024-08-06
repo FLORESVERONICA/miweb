@@ -1,0 +1,21 @@
+body {
+ background-size: 100%;
+ background-repeat: no-repeat;
+  
+}
+nav {
+ display: flex;
+ 
+ 
+
+}
+a {
+ padding: 5px;
+}
+img {
+ width: 50px;
+ height: 50px;
+ position: relative;
+ top: 850px;
+ left: 1500px;
+}
