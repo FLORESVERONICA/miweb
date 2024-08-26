@@ -76,6 +76,7 @@ function mostrarFrasesEImagenes(){
 
 document.addEventListener("DOMContentLoaded",mostrarFrasesEImagenes);
 
+document.body.style.backgroundImage = "url(https://images.unsplash.com/photo-1722100351919-86ee668c88db?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5fHx8ZW58MHx8fHx8)";
 const imagen = ["https://images.unsplash.com/photo-1722100351919-86ee668c88db?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5fHx8ZW58MHx8fHx8","https://plus.unsplash.com/premium_photo-1722077703164-b2c0cbefd9e5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyMnx8fGVufDB8fHx8fA%3D%3D","https://images.unsplash.com/photo-1722033838779-0e9b07eadce5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MHx8fGVufDB8fHx8fA%3D%3D","https://images.unsplash.com/photo-1721775551177-3c6da363fdf0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3M3x8fGVufDB8fHx8fA%3D%3D","https://plus.unsplash.com/premium_photo-1720647024032-01a5e9740c96?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5Mnx8fGVufDB8fHx8fA%3D%3D","https://images.unsplash.com/photo-1721678160780-2ea6aa76a90c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMzh8fHxlbnwwfHx8fHw%3D","https://images.unsplash.com/photo-1721332155637-8b339526cf4c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNDV8fHxlbnwwfHx8fHw%3D","https://images.unsplash.com/photo-1721633617994-06d5493feda7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNzV8fHxlbnwwfHx8fHw%3D","https://images.unsplash.com/photo-1721807578532-dc1756624727?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxODB8fHxlbnwwfHx8fHw%3D"];
 function ImagenBackground() {
     const randomImagen = Math.floor(Math.random() * imagen.length);
@@ -83,4 +84,4 @@ function ImagenBackground() {
     document.body.style.backgroundImage = imagenURL;
     console.log(imagenURL);
 }
-setInterval(ImagenBackground(),10000);
+setInterval(ImagenBackground,10000);

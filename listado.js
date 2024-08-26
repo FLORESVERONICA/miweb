@@ -54,6 +54,8 @@ document.addEventListener("DOMContentLoaded", () => {
       localStorage.setItem('links', JSON.stringify(links));
   }
 });
+
+document.body.style.backgroundImage = "url(https://plus.unsplash.com/premium_photo-1668241683570-958ed3a9156e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxODF8fHxlbnwwfHx8fHw%3D)";
 const imagen = ["https://plus.unsplash.com/premium_photo-1668241683570-958ed3a9156e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxODF8fHxlbnwwfHx8fHw%3D","https://images.unsplash.com/photo-1721804975881-1768e59f46cb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxODR8fHxlbnwwfHx8fHw%3D","https://images.unsplash.com/photo-1721297013384-ec6372912b88?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxODh8fHxlbnwwfHx8fHw%3D","https://images.unsplash.com/photo-1721626830585-7250c537c44e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyMDR8fHxlbnwwfHx8fHw%3D","https://images.unsplash.com/photo-1721763604802-21cc60882810?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyMDV8fHxlbnwwfHx8fHw%3D","https://images.unsplash.com/photo-1721297015609-1374b1378d31?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyMTd8fHxlbnwwfHx8fHw%3D","https://images.unsplash.com/photo-1721714874858-18526c08b8d7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyMTl8fHxlbnwwfHx8fHw%3D","https://images.unsplash.com/photo-1721739263063-969dfdc5062f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyMDl8fHxlbnwwfHx8fHw%3D","https://images.unsplash.com/photo-1721627679019-1c065961a6b6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNjh8fHxlbnwwfHx8fHw%3D","https://images.unsplash.com/photo-1721906794508-20c3c5b60bfd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNTZ8fHxlbnwwfHx8fHw%3D"];
 function ImagenBackground() {
     const randomImagen = Math.floor(Math.random() * imagen.length);
@@ -61,4 +63,4 @@ function ImagenBackground() {
     document.body.style.backgroundImage = imagenURL;
     console.log(imagenURL);
 }
-setInterval(ImagenBackground(),10000);
+setInterval(ImagenBackground,10000);

@@ -52,5 +52,8 @@ img {
 }
 li {
  position: relative;
- top: 500px;
+ top: 480px;
+}
+li:hover{
+    transform: translateY(20px);
 }

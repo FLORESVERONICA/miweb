@@ -73,3 +73,6 @@ nav {
     top: 700px;  
     right: -200px;
    }
+   img:hover{
+    transform: translateY(20px);
+}
